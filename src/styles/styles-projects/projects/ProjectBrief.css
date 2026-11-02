@@ -1,0 +1,119 @@
+/* brief */
+.project-brief {
+  padding: 5rem 0;
+  background-color: var(--dark);
+  position: relative;
+}
+
+.project-brief-dots {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 45%;
+  clip-path: var(--rombo);
+  background-image: radial-gradient(var(--deep-blue) 1px, transparent 0);
+  background-size: 10px 10px;
+  background-position: -0px -0px;
+}
+
+.brief-article {
+  transition: all 0.2s linear;
+}
+
+.brief-article:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.brief-article:hover {
+  scale: 1.01;
+}
+
+.brief-subtitle {
+  font-family: var(--jetbrains);
+  color: var(--orange);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.brief-text {
+  color: var(--white);
+  opacity: 0.8;
+  font-family: var(--DM-sans);
+}
+
+.brief-article ul {
+  list-style: square;
+  margin-left: 16px;
+}
+
+.brief-article ul li {
+  color: var(--white);
+  opacity: 0.8;
+  font-family: var(--DM-sans);
+}
+
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+
+/* media queries */
+@media screen and (max-width: 1000px) {
+  .project-brief {
+    padding: 4rem 0;
+  }
+
+  .project-brief-dots {
+    width: 30%;
+    height: 50%;
+  }
+
+  .brief-article:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .brief-subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .brief-text,
+  .brief-article ul li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .project-brief-dots {
+    width: 40%;
+    height: 40%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project-brief {
+    padding: 3rem 0;
+  }
+
+  .project-brief-dots {
+    width: 50%;
+    height: 50%;
+  }
+
+  .brief-article:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .brief-subtitle {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .brief-text,
+  .brief-article ul li {
+    font-size: 12px;
+  }
+}

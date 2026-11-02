@@ -1,0 +1,129 @@
+/* project video */
+.project-video {
+  padding: 5rem 0;
+  background-color: var(--dark);
+  position: relative;
+}
+
+.project-video-dots-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  height: 35%;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+  background-image: radial-gradient(var(--orange) 2px, transparent 0);
+  background-size: 20px 20px;
+  background-position: -0px -0px;
+}
+
+.project-video-dots-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 35%;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%);
+  background-image: radial-gradient(var(--orange) 2px, transparent 0);
+  background-size: 20px 20px;
+  background-position: -0px -0px;
+}
+
+.project-section-index {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.list-smussato {
+  width: 25px;
+  height: 25px;
+  clip-path: var(--smussato);
+  background-color: var(--orange);
+  margin-right: 15px;
+}
+
+.section-index-title {
+  color: var(--white);
+  font-size: 2.5rem;
+  font-family: var(--bowlby);
+  font-weight: normal;
+}
+
+.video-player {
+  width: 100%;
+  clip-path: polygon(0 0, 98% 0, 100% 4%, 100% 100%, 2% 100%, 0% 96%);
+
+  iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    border: none;
+  }
+}
+
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+
+/* media queries */
+
+@media screen and (max-width: 1000px) {
+  .project-video-dots-left,
+  .project-video-dots-right {
+    width: 30%;
+    height: 30%;
+    background-size: 15px 15px;
+  }
+
+  .project-video {
+    padding: 4rem 0;
+  }
+
+  .project-section-index {
+    margin-bottom: 15px;
+  }
+
+  .section-index-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .list-smussato {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+  }
+
+  .section-index-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project-video-dots-left,
+  .project-video-dots-right {
+    width: 30%;
+    height: 30%;
+    background-image: radial-gradient(var(--orange) 1px, transparent 0);
+    background-size: 10px 10px;
+  }
+
+  .project-video {
+    padding: 3rem 0;
+  }
+
+  .list-smussato {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+  }
+
+  .section-index-title {
+    font-size: 1.6rem;
+  }
+}

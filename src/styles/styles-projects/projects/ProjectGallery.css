@@ -1,0 +1,143 @@
+/* gallery */
+.project-gallery {
+  padding: 5rem 0;
+  background-color: var(--black);
+  position: relative;
+}
+
+.project-gallery-stripes {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 60%;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  transform: translate(-50%, -50%);
+  background-image: repeating-linear-gradient(
+    -40deg,
+    transparent,
+    transparent 10px,
+    var(--blue) 10px,
+    var(--blue) 12px
+  );
+}
+
+.gallery-grid {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.gallery-image {
+  width: calc((100% / 2) - 25px);
+  transition: all 0.2s linear;
+  border: 2px solid var(--gray);
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.gallery-image:hover {
+  transform: translate(0, -5px);
+  border: 2px solid var(--orange);
+}
+
+.gallery-image:focus-visible,
+.btn-close-focus:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 3px;
+}
+
+.gallery-image-focus {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(97, 97, 97, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 90%;
+    display: block;
+  }
+}
+
+.btn-close-focus {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background-color: var(--orange);
+  width: 30px;
+  height: 30px;
+  clip-path: var(--rombo);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.btn-close-focus:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  color: black;
+}
+
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+
+/* media queries */
+@media screen and (max-width: 1000px) {
+  .project-gallery {
+    padding: 4rem 0;
+  }
+
+  .gallery-grid {
+    gap: 30px;
+  }
+
+  .gallery-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .gallery-image-focus {
+    width: 100dvh;
+    height: 100vw;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%) rotate(90deg);
+    transform-origin: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project-gallery {
+    padding: 3rem 0;
+  }
+
+  .gallery-grid {
+    gap: 15px;
+  }
+}

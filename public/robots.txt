@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://diego-tosato-dev.it/sitemap.xml

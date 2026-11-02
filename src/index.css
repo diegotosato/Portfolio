@@ -1,0 +1,118 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* root */
+:root {
+  /* font */
+  --bowlby: "Bowlby One", sans-serif;
+  --DM-sans: "DM Sans", sans-serif;
+  --jetbrains: "JetBrains Mono", monospace;
+
+  /* colori */
+  --blue: #657fe8;
+  --gold: #e1ae10;
+  --orange: #fdb01c;
+  --white: #fff;
+  --black: #000;
+  --pale-blue: #7d96fc;
+  --light-blue: #dce4ff;
+  --deep-blue: #344daf;
+  --gray: #616161;
+  --dark: #252525;
+  --pale-yellow: #fff5d6;
+  --soft-orange: #ffe0a3;
+
+  /* polygons */
+  --rombo: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  --smussato: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 10% 100%, 0% 90%);
+}
+
+/* generics */
+.no-overflow {
+  overflow: hidden;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.section-grid {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.section-sx,
+.section-dx {
+  width: calc(50% - 15px);
+}
+
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+
+/* media queries */
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section-grid {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .section-sx,
+  .section-dx {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-grid {
+    gap: 20px;
+  }
+}

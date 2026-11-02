@@ -1,0 +1,32 @@
+{
+  "short_name": "Diego Tosato",
+  "name": "Diego Tosato - Junior Full Stack Web Developer",
+  "description": "Diego Tosato, sviluppatore web full stack junior a Treviso. Applicazioni web complete con React, Node.js, PHP e Laravel. Scopri il portfolio.",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/android-chrome-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "id": "/",
+  "lang": "it",
+  "start_url": "/",
+  "background_color": "#657fe8",
+  "theme_color": "#fdb01c",
+  "display": "standalone",
+  "scope": "/"
+}

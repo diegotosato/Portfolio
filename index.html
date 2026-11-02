@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Diego Tosato | Junior Full Stack Web Developer</title>
+
+    <!--
+      I tag con data-static-seo servono ai crawler che non eseguono JavaScript:
+      il componente SEO li rimuove e li sostituisce con quelli specifici di ogni pagina.
+    -->
+    <meta
+      data-static-seo
+      name="description"
+      content="Diego Tosato, sviluppatore web full stack junior a Treviso. Applicazioni web complete con React, Node.js, PHP e Laravel. Scopri il portfolio."
+    />
+    <link data-static-seo rel="canonical" href="https://diego-tosato-dev.it/" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Diego Tosato" />
+    <meta name="theme-color" content="#fdb01c" />
+
+    <!-- Open Graph / social (letti dai crawler che non eseguono JavaScript) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Diego Tosato" />
+    <meta property="og:locale" content="it_IT" />
+    <meta
+      data-static-seo
+      property="og:url"
+      content="https://diego-tosato-dev.it/"
+    />
+    <meta
+      data-static-seo
+      property="og:title"
+      content="Diego Tosato | Junior Full Stack Web Developer"
+    />
+    <meta
+      data-static-seo
+      property="og:description"
+      content="Diego Tosato, sviluppatore web full stack junior a Treviso. Applicazioni web complete con React, Node.js, PHP e Laravel. Scopri il portfolio."
+    />
+
+    <meta
+      property="og:image"
+      content="https://diego-tosato-dev.it/social-preview.jpg"
+    />
+    <meta property="og:image:width" content="1140" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta
+      property="og:image:alt"
+      content="Diego Tosato, Junior Full Stack Web Developer"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      data-static-seo
+      name="twitter:title"
+      content="Diego Tosato | Junior Full Stack Web Developer"
+    />
+    <meta
+      data-static-seo
+      name="twitter:description"
+      content="Diego Tosato, sviluppatore web full stack junior a Treviso. Applicazioni web complete con React, Node.js, PHP e Laravel. Scopri il portfolio."
+    />
+    <meta
+      name="twitter:image"
+      content="https://diego-tosato-dev.it/social-preview.jpg"
+    />
+
+    <!-- Preconnect per Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload della foto hero (elemento più grande della homepage) -->
+    <link
+      rel="preload"
+      href="/hero-photo.webp"
+      as="image"
+      type="image/webp"
+      fetchpriority="high"
+    />
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icone fontawesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Favicon standard di fallback per vecchi browser -->
+    <link rel="icon" href="/favicon_colori.ico" sizes="any" />
+
+    <!-- Favicon PNG per browser moderni -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+
+    <!-- Icona per dispositivi Apple (iOS Safari / iPad / iPhone) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Link al Web App Manifest per Android / PWA -->
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

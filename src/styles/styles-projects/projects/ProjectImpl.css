@@ -1,0 +1,102 @@
+/* project-impl */
+.project-impl {
+  padding: 5rem 0;
+  background-color: var(--black);
+}
+
+.impl-scheda {
+  border-left: 5px solid var(--blue);
+  background: linear-gradient(
+    0.25turn,
+    rgba(101, 127, 232, 0.15),
+    rgba(0, 0, 0, 0)
+  );
+  padding: 0.5rem 1rem;
+  transition: all 0.2s linear;
+}
+
+.impl-scheda:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.impl-scheda:hover {
+  background-color: rgba(101, 127, 232, 0.15);
+  transform: translate(5px);
+}
+
+.impl-subtitle {
+  color: var(--orange);
+  font-family: var(--DM-sans);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.impl-text {
+  color: var(--white);
+  opacity: 0.8;
+  font-family: var(--DM-sans);
+  font-size: 16px;
+}
+
+.impl-scheda ul {
+  list-style: square;
+  margin-left: 16px;
+}
+
+.impl-scheda ul li {
+  color: var(--white);
+  opacity: 0.8;
+  font-family: var(--DM-sans);
+}
+
+.impl-scheda ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+
+/* media queries */
+@media screen and (max-width: 1000px) {
+  .project-impl {
+    padding: 4rem 0;
+  }
+
+  .impl-scheda:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .impl-subtitle {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .impl-text,
+  .impl-scheda ul li {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .project-impl {
+    padding: 3rem 0;
+  }
+
+  .impl-scheda:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .impl-subtitle {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .impl-text,
+  .impl-scheda ul li {
+    font-size: 12px;
+  }
+}

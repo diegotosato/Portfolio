@@ -1,0 +1,303 @@
+/* about */
+.about {
+  padding: 10rem 0;
+  background: var(--light-blue);
+  background-image: radial-gradient(var(--white) 2px, transparent 0);
+  background-size: 20px 20px;
+  background-position: -0px -0px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 5rem));
+  margin-bottom: -5rem;
+  position: relative;
+  z-index: 5;
+}
+
+.section-intro {
+  color: var(--white);
+  font-family: var(--jetbrains);
+  font-size: 14px;
+  width: fit-content;
+  background-color: var(--black);
+  clip-path: var(--rombo);
+  padding: 0.5rem 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-family: var(--bowlby);
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: normal;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+
+.section-span-codice {
+  color: var(--orange);
+}
+
+/* sullo sfondo chiaro della sezione About serve un arancione più scuro */
+.about .section-span-codice {
+  color: var(--orange);
+}
+
+.hobby-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: start;
+  row-gap: 15px;
+  column-gap: 10px;
+}
+
+.hobby {
+  clip-path: var(--rombo);
+  font-family: var(--DM-sans);
+  color: var(--black);
+  background-color: var(--white);
+  border: none;
+  padding: 0.5rem 1.5rem;
+  text-transform: capitalize;
+  position: relative;
+  transition: all 0.2s linear;
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.hobby:hover {
+  cursor: default;
+  background-color: var(--orange);
+}
+
+.about-paragraph {
+  color: var(--black);
+  font-family: var(--DM-sans);
+  background-color: var(--light-blue);
+  padding: 1rem;
+  margin-bottom: 40px;
+}
+
+.about-paragraph span {
+  display: block;
+}
+
+.about-paragraph span:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.section-slogan {
+  position: relative;
+
+  * {
+    transition: all 0.2s linear;
+  }
+}
+
+.slogan {
+  position: relative;
+  z-index: 2;
+  clip-path: var(--smussato);
+  padding: 3rem 2rem;
+  background-color: var(--blue);
+  color: var(--white);
+  font-family: var(--bowlby);
+  text-align: center;
+}
+
+.slogan-repeat {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: var(--smussato);
+  background-color: var(--orange);
+  transform: translate(15px, 15px);
+}
+
+.section-slogan:hover {
+  .slogan {
+    background-color: var(--deep-blue);
+  }
+
+  .slogan-repeat {
+    transform: translate(0, 0);
+  }
+}
+
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+/* ########################################## */
+
+/* media queries */
+@media screen and (max-width: 1545px) {
+  .slogan {
+    padding: 2.5rem 1.5rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .slogan {
+    padding: 2.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .slogan {
+    padding: 2.5rem 1rem;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .section-intro {
+    font-size: 13px;
+    padding: 0.4rem 1.05rem;
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-size: 3.1rem;
+    line-height: 3.1rem;
+  }
+
+  .about-paragraph {
+    padding: 1rem;
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  .hobby {
+    padding: 0.4rem 1.3rem;
+    font-size: 14px;
+  }
+
+  .slogan {
+    padding: 2rem 1rem;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .about {
+    padding: 8rem 0;
+    margin-bottom: -4rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 4rem));
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section-title {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+
+  .slogan {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section-intro {
+    font-size: 13px;
+    padding: 0.4rem 1.05rem;
+    margin: 0 auto 20px;
+  }
+
+  .section-title {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+  }
+
+  .hobby-tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+    column-gap: 10px;
+  }
+
+  .hobby {
+    padding: 0.5rem 1.5rem;
+    font-size: 16px;
+  }
+
+  .slogan {
+    padding: 2rem 1rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about {
+    padding: 6rem 0;
+    margin-bottom: -3rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 3rem));
+  }
+
+  .slogan {
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-size: 14px;
+  }
+
+  .slogan-repeat {
+    width: calc(100% - 20px);
+    right: 10px;
+    transform: translate(10px, 10px);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .about {
+    padding: 6rem 0;
+    margin-bottom: -3rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 3rem));
+  }
+
+  .hobby-tags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 12px;
+    column-gap: 5px;
+  }
+
+  .hobby {
+    padding: 0.4rem 1.4rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-intro {
+    font-size: 10px;
+    padding: 0.5rem 1.2rem;
+    margin: 0 auto 15px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+  }
+
+  .about-paragraph {
+    padding: 1rem;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .slogan {
+    padding: 1.5rem 1rem;
+    font-size: 12px;
+  }
+}
