@@ -84,6 +84,24 @@ export default function Projects() {
       ],
       to: "/projects/gym-manager",
     },
+    {
+      id: 6,
+      name: "Sonora",
+      caption: `Sonora è una landing page per un brand immaginario di cuffie premium`,
+      img: "/projects/sonora/image_1-thumb.webp",
+      alt: "Immagine della home page di Sonora",
+      type: "Landing Page",
+      stacks: [
+        "html",
+        "css",
+        "javascript",
+        "php",
+        "laravel",
+        "mysql",
+        "stripe",
+      ],
+      to: "/projects/sonora",
+    },
   ];
 
   const stackInfo = {

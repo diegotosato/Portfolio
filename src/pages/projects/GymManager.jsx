@@ -502,10 +502,7 @@ export default function GymManager() {
               <p className="link-project-title">[GameVault]</p>
             </Link>
 
-            <Link
-              to={"/projects/dragonball-collector"}
-              className="link-project"
-            >
+            <Link to={"/projects/sonora"} className="link-project">
               <span>
                 successivo{" "}
                 <i
@@ -513,7 +510,7 @@ export default function GymManager() {
                   aria-hidden="true"
                 ></i>
               </span>
-              <p className="link-project-title">[DragonBall Collector]</p>
+              <p className="link-project-title">[Sonora]</p>
             </Link>
           </div>
 

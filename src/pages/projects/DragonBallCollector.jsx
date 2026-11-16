@@ -466,7 +466,7 @@ export default function DragonBallCollector() {
 
         <div className="container">
           <div className="nav-projects">
-            <Link to={"/projects/gym-manager"} className="link-project">
+            <Link to={"/projects/sonora"} className="link-project">
               <span>
                 <i
                   className="fa-solid fa-arrow-left-long"
@@ -474,7 +474,7 @@ export default function DragonBallCollector() {
                 ></i>{" "}
                 precedente
               </span>
-              <p className="link-project-title">[Gym Manager]</p>
+              <p className="link-project-title">[Sonora]</p>
             </Link>
 
             <Link to={"/projects/liveloot"} className="link-project">

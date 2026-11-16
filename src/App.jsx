@@ -9,6 +9,7 @@ import LiveLoot from "./pages/projects/LiveLoot.jsx";
 import TrapItaliana from "./pages/projects/TrapItaliana.jsx";
 import GameVault from "./pages/projects/GameVault.jsx";
 import GymManager from "./pages/projects/GymManager.jsx";
+import Sonora from "./pages/projects/Sonora.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
 function App() {
@@ -32,6 +33,8 @@ function App() {
           <Route path={"/projects/gamevault"} element={<GameVault />} />
 
           <Route path={"/projects/gym-manager"} element={<GymManager />} />
+
+          <Route path={"/projects/sonora"} element={<Sonora />} />
         </Route>
 
         <Route path="*" element={<NotFound />} />
